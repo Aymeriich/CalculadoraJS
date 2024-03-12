@@ -2,7 +2,6 @@ console.log('test')
 
 let entradaCalculadora = document.getElementById('input');
 let temporal = 0;
-let operacion;
 let operacionCompleta = '';
 let numGuardado = ''
 
@@ -48,8 +47,7 @@ function cleanInput() {
 function operacionFunction(operador) {
     temporal = entradaCalculadora.value;
     entradaCalculadora.value = '';
-    operacionCompleta += temporal + operacion;
-    ultimaOperacion = operacion + temporal;
+    operacionCompleta += temporal + operador;
     console.log(operacionCompleta)
 }
 
